@@ -51,12 +51,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-function modify(e) {
+function modify(element) {
   const input = document.createElement("input");
   input.classList.add("userList");
   input.value = element.textContent;
 
-  e.parentNode.replaceChild(input, e);
+  element.parentNode.replaceChild(input, element);
 
   input.focus();
 
